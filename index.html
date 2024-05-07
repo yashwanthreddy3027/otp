@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:4px solid black;
+            height:300px;
+           background-image: linear-gradient(grey,white,blue);
+            width: 450px;
+            border-radius: 20px;
+            text-align: center;
+            
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            margin-left: 10px;
+            background-color: rgb(240, 76, 76);
+        }
+        p{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="id1">
+        <h1>Random OTP Generator</h1>
+        <h3>OTP for verification </h3>
+        <p id="id2">your otp is here</p>
+        <button id="btn1">click here</button>
+        <!-- <button id="btn2">reset otp</button> -->
+
+    </div>
+    <script>
+        div1=document.getElementById("id1")
+       btn1= document.getElementById("btn1")
+       btn1.style.Ba
+       btn1.addEventListener("click", ()=>{
+        p1=document.getElementById("id2");
+        p1.innerHTML=Math.floor(Math.random()*999999);
+        if(p1.length<4)
+        p1.innerHTML=Math.floor(Math.random()*999999);
+       }
+    );
+    
+    
+    </script>
+</body>
+</html>
